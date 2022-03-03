@@ -1,0 +1,29 @@
+.stats__rounded {
+    .rounded__wrapper {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: relative;
+    }
+    .progress__bar {
+        border: 1px solid black;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        clip: rect(0px 200px 500px 0px);
+        transform: rotate(189deg);
+        z-index: 3;
+    }
+    svg {
+        transform: rotate(-90deg);
+        stroke-dasharray: 251;
+        stroke-dashoffset: 251;
+        animation: offsettozero 5s linear forwards;
+    }
+    @keyframes offsettozero {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

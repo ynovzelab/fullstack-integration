@@ -1,6 +1,8 @@
+@import "../styles/utils/mixins";
 .dashboard__wrapper {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    @include display-flex(inherit, space-between);
     .sidebar {
         &__left {
             width: 15%;
